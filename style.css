@@ -15,12 +15,14 @@ body {
 .header,
 .hero {
     display: flex;
+    justify-content: center;
+    gap: 10px;
     padding: 20px;
+    padding-bottom: 50px;
     background-color: #1F2937;
 }
 
 .header {
-    justify-content: space-around;
     background-color: #1F2937;
     color: #F9FAF8;
 }
@@ -33,23 +35,35 @@ body {
 .header .links a {
     color: #E5E7EB;
     text-decoration: none;
+    font-size: 18px;
+}
+.header .left,
+.header .right {
+    max-width: 550px;
 }
 .header .left {
-    flex: 1 1 auto;
-    max-width: 524px;
+    flex: 1;
+}
+.logo {
+    font-size: 24px;
 }
 
 .hero {
     color: #F9FAF8;
-    justify-content: space-around;
 }
-.hero .left {
-    max-width: 400px;
-}
+.hero .left,
 .hero .right {
-    max-width: 524px;
+    max-width: 500px;
 }
-
+.hero h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+}
+.hero p {
+    padding-right: 20px;
+}
 .hero button {
     background-color: #3882F6;
     text-align: center;
